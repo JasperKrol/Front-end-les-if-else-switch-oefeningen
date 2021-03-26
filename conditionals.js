@@ -2,29 +2,42 @@
 // 0. Voorbeeldvraag: declareer een variabele met daarin de vergelijking of 2 gelijk is aan 2.                // geeft true wanneer gelogd
 // ==========================================
 
-const equalNumbers = 2 === 2;
+const equalNumbers = 2 == 2;
 console.log('Is 2 gelijk aan 2?', equalNumbers);
 
 // ==========================================
 // 1. Declareer een variabele en sla daar de uitkomst van de vergelijking "Is 10 groter dan 20?" in op        // geeft false wanneer gelogd
 // ==========================================
 
+const biggerNumber = 10 > 20;
+console.log("Is 10 groter dan 20? " + biggerNumber);
 
 // ==========================================
 // 2. Declareer een variabele en sla daar de uitkomst van de vergelijking "Is 10 ongelijk aan 11?" in op        // geeft true wanneer gelogd
 // ==========================================
 
+const numberDiffers = 10 !== 11;
+console.log("Is tien ongelijk aan 11? "+ numberDiffers)
 
 // ==========================================
 // 3. Declareer een variabele en sla daar in op of de woorden 'zoet' en 'sappig' hetzelfde zijn                // geeft false wanneer gelogd
 // ==========================================
 
+const sameTaste = "zoet" === "sappig";
+console.log("zijn ze het zelfde? " + sameTaste)
 
 // ==========================================
 // 4a. Declareer een variabele en sla daar het rapportcijfer 9 in op.
 // 4b. schrijf een script dat checkt of het rapportcijfer groter is dan 8.
 //     Als dat zo is, loggen we 'Cum laude!' in de console.                                                     // geeft 'Cum laude!' wanneer gelogd
 // ==========================================
+
+const rapportcijfer = 9;
+if (rapportcijfer === 9 || rapportcijfer >8) {
+    console.log("Cumlaude")
+} else if (rapportcijfer <9) {
+    console.log("geslaagd");
+}
 
 
 // ==========================================
@@ -35,4 +48,12 @@ console.log('Is 2 gelijk aan 2?', equalNumbers);
 // ==========================================
 
 const isRaining = false;
-const temperature = 23;
+const temperature = 18;
+
+if (isRaining === false && temperature >=21) {
+    console.log("je kunt een korte broek aan")
+}
+if  (isRaining === true || temperature <21) {
+    console.log("trek een jas aan")
+}
+
