@@ -50,10 +50,12 @@ if (rapportcijfer === 9 || rapportcijfer >8) {
 const isRaining = false;
 const temperature = 18;
 
-if (isRaining === false && temperature >=21) {
-    console.log("je kunt een korte broek aan")
+
+if (!isRaining && temperature > 21) {
+    console.log("Je kunt een korte broek aan!");
 }
-if  (isRaining === true || temperature <21) {
-    console.log("trek een jas aan")
+
+if (isRaining || temperature < 12) {
+    console.log("Doe een jas aan!");
 }
 
